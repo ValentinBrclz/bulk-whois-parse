@@ -1,0 +1,68 @@
+{
+  "name": "bulk-whois-parse",
+  "version": "0.0.1",
+  "description": "A node module to obtain parsed data from whois for all possible domains and TLDs",
+  "main": "lib/bulk-whois-parse.js",
+  "directories": {
+    "example": "examples",
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ValentinBrclz/bulk-whois-parse.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ValentinBrclz/bulk-whois-parse/issues"
+  },
+  "homepage": "https://github.com/ValentinBrclz/bulk-whois-parse#readme",
+  "keywords": [
+    "domain",
+    "whois",
+    "parse",
+    "tld",
+    "domain",
+    "name"
+  ],
+  "author": {
+    "name": "Valentin Berclaz",
+    "url": "http://www.valentinberclaz.com/"
+  },
+  "license": "GPL-3.0",
+  "devDependencies": {
+    "eslint": "^3.4.0",
+    "gulp": "^3.9.1",
+    "jscs": "^3.0.7",
+    "jshint": "^2.9.3"
+  },
+  "scripts": {
+    "lint": "jshint lib/",
+    "jscs": "jscs lib/",
+    "test": "npm run-script lint && npm run-script jscs"
+  },
+  "eslintConfig": {
+    "env": {
+      "node": true
+    },
+    "rules": {
+      "eol-last": 0,
+      "quotes": [
+        2,
+        "single"
+      ],
+      "prefer-const": "error"
+    }
+  },
+  "jshintConfig": {
+    "node": true,
+    "strict": true
+  },
+  "jscsConfig": {
+    "preset": "node-style-guide",
+    "requireCurlyBraces": false,
+    "disallowMultipleVarDecl": false,
+    "maximumLineLength": 220,
+    "validateIndentation": "\t",
+    "requireTrailingComma": false,
+    "validateLineBreaks": "LF"
+  }
+}
